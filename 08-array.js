@@ -49,4 +49,4 @@ const ingr = veges.concat(source);
 console.log(ingr, ingr.length);
 
 // join : 배열 내부의 요소(item)을 한 문장으로 합쳐준다.
-console.log(ingr, "-> 김장재료: ", ingr.join(", "));    // 구분자 , 를 기준으로 한 문장으로 출력되게 해준다!
+console.log(ingr, "-> 김장재료: ", ingr.join(", "));    // 구분자(괄호 안) 를 기준으로 한 문장으로 출력되게 해준다!
