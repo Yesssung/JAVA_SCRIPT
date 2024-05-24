@@ -30,16 +30,19 @@ for(let i = 5; i > 0; i--){
     console.log(stars)
 }
 
-console.log("============================ while 별");
-let i = 5;
-while (i > 0){
-    let stars = "";
-    let a = 1;
+// console.log("============================ while 별");
+// let i = 5;
+// while (i > 0){
+//     let stars = "";
+//     let a = 1;
 
-    while(a <= i){
-        stars += "*";
-        a++;
-    }
-    console.log(stars);
-    i--;
-}
+//     while(a <= i){
+//         stars += "*";
+//         a++;
+//     }
+//     console.log(stars);
+//     i--;
+// }
+
+// for in : 객체 내부요소 순회
+// for of : 배열 요소 값
