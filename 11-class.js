@@ -35,6 +35,14 @@ class Circle extends Shape {
         super(x, y);                // 부모로 받은 x, y -> super로 물려받은 필드 초기화
         this.radius = radius;
     }
+
+    // 물려받은 area 메서드 재정의
+    area(){
+        if(this.radius === 0){
+            return super.area();
+        }
+        return Math.PI * this.radius ** 2;
+    }
 }
 
 let s = new Shape(10, 20);
