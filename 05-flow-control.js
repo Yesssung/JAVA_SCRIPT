@@ -44,5 +44,19 @@ for(let i = 5; i > 0; i--){
 //     i--;
 // }
 
-// for in : 객체 내부요소 순회
-// for of : 배열 요소 값
+// for...in : 객체 내부요소 순회 / 객체 속성 키를 반복한다.
+const obj = {
+    name: "꼬부기",
+    age: 18,
+    job: "소방관"
+}
+
+for(let key in obj){
+    console.log(`${key} -> ${obj[key]}`);
+}
+
+// for...of : 배열 요소 값/ 배열을 순회
+const arr = [1, 2, 3, 4, 5];
+for (let item of arr) {
+    console.log(item);
+}
