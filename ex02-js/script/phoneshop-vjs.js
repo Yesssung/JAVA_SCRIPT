@@ -2,9 +2,9 @@ function testAttributes(){
     // #main-image -> 속성 확인
     let mainImage = document.getElementById("main-image");
     console.log("#main-image: ", mainImage);
-    // 가지고 있는 모든 속성 확인
-    console.log(mainImage.getAttributeNames());
 
+    // 속성 목록 확인 : 가지고 있는 모든 속성 확인
+    console.log(mainImage.getAttributeNames());
     // 속성 조회 : getAttribute
     // ID 속성 확인
     console.log("id: ", mainImage.getAttribute("id"));
@@ -37,7 +37,7 @@ function testAttributes(){
             // #main-image를 click하면 발생하는 이벤트(정보) 확인
             document.getElementById("main-image").onclick = (event) => {
                 // 이벤트 처리 함수의 첫번째 매개변수는 이벤트 정보객체
-                alert("메인 이미지 클릭!");
+                // alert("메인 이미지 클릭!");
                 // console.log(event);
                 // console.log("이벤트명 : ", event.name);
                 // console.log("이벤트 발생 객체 : ", event.target);
@@ -63,6 +63,8 @@ function testAttributes(){
                     });
                 }
     
+                // 검색창에 검색내역 같이 보이기:
+
                 document.getElementById("keyword").addEventListener("keypress", event => {
                     console.log(event);
                 
@@ -78,5 +80,5 @@ function testAttributes(){
     
                 let btnSearch = document.getElementById("btn-search");
                 btnSearch.innerText = `검색 : ${message}`;
-                 });
+                });
             });
